@@ -19,8 +19,17 @@ of an ML system_
 You will need to talk through your approach, how you modelled the data and why you thought that data was important, provide endpoints to collect the data and 
 a means to store the data. Testing is important and will be used verify your system
 
+## A note on AI generated code
+This project isn't about writing code, AI can and will do that for you.
+The next step in this process is to talk through your solution and the decisions you made to come to them. It makes for an awkward and rather boring interview reviewing chatgpt's solution.
 
-#### In short
+If you use a tool to help you write code, that's fine, but we want to see _your_ thought process.
+
+Provided under the chatgpt folder is the response you get back from chat4o. 
+If your intention isn't to complete the project but to get an AI to spec it for you please, feel free to submit this instead of wasting OpenAI's server resources.
+
+
+## Problem statement recap
 This is a domain modeling problem to build a fit for purpose data storage with a focus on ai data ingestion
 - Model the problem into a storage schema (SQL DB schema or whatever you prefer)
 - CRUD some data
