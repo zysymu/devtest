@@ -2,7 +2,7 @@ name: AI Code Check
 
 on:
   workflow_dispatch:
-  pull_request:
+  pull_request_target:
     branches: [ master ]
     types: [ opened, synchronize ]
 
@@ -12,6 +12,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
       
     - name: AI Citric-Sheep Watchdog
       uses: Citric-Sheep/ai-watchdog@v0.2.3
