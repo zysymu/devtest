@@ -1,0 +1,17 @@
+name: AI Code Check
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  ai-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+      
+    - name: AI Citric-Sheep Watchdog
+      uses: Citric-Sheep/ai-watchdog@v0.1
+      with:
+        openai-api-key: ${{ secrets.OPENAI_API_KEY }}
